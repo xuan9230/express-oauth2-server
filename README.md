@@ -38,7 +38,7 @@
 
 6. Install dev dependencies
    ```
-   npm install --save-dev babel-core babel-loader babel-preset-es2015 babel-preset-react babel-preset-stage-0 postcss-loader precess autoprefixer
+   npm install --save-dev babel-core babel-loader babel-preset-es2015 babel-preset-react babel-preset-stage-0 postcss-loader precess autoprefixer style-loader
    ```
 
 7. Install React
