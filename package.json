@@ -30,6 +30,7 @@
     "babel-preset-stage-0": "^6.5.0",
     "postcss-loader": "^0.13.0",
     "precss": "^1.4.0",
+    "style-loader": "^0.13.1",
     "webpack": "^1.13.2",
     "webpack-dev-middleware": "^1.6.1",
     "webpack-hot-middleware": "^2.12.2"

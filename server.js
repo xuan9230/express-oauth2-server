@@ -18,6 +18,8 @@ app.use(require("webpack-hot-middleware")(compiler));
 
 // express server
 
+// routers
+
 app.get('*', function(req, res) {
   res.sendFile(__dirname + '/public/index.html');
 });
