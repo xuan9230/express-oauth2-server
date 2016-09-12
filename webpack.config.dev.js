@@ -20,9 +20,12 @@ module.exports = {
   ],
   module: {
     loaders: [
-      {test: /\.js|\.jsx$/, include: path.join(__dirname, 'app'), loader: ['babel'], query:{ presets: ['es2015', 'react', 'stage-0']} },
+      {test: /\.js$|\.jsx$/, include: path.join(__dirname, 'app'), loader: ['babel'], query:{ presets: ['es2015', 'react', 'stage-0']} },
       {test: /(\.css)$/, loader: 'style!css!postcss'},
     ]
+  },
+  resolve: {
+    extensions: ['', '.js', '.jsx'],
   },
   postcss: function () {
     return [precss, autoprefixer];
