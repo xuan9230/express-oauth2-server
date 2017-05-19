@@ -1,13 +1,23 @@
-import React from 'react';
+import React from 'react'
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom'
+import AuthDialog from './AuthDialog';
 
-class App extends React.Component {
-  render() {
-    return (
-      <div>
-        Content goes here
-      </div>
-    );
-  }
-}
+const Home = () => (
+  <div>
+    <h2>Home</h2>
+  </div>
+)
 
-export default App;
+const App = () => (
+  <Router>
+    <div>
+      <Route exact path="/" component={Home}/>
+      <Route path="/oauth2/authorize" component={AuthDialog} />
+    </div>
+  </Router>
+)
+export default App
